@@ -56,7 +56,8 @@ TWELVEND/
 │   └── progress.md
 ├── TWELVEND_Story_Bible.pdf
 ├── README.md
-└── LICENSE
+├── LICENSE
+└── 
 ```
 
 ## Story Bible
@@ -97,7 +98,13 @@ This project is currently centered on the narrative and gameplay foundation for 
 
 ## License
 
-This project is maintained under the repository’s license terms. Please review the repository files for the exact licensing details.
+© 2026 NYXARA_IN. All rights reserved.
+
+This project, including all source code, game design, narrative content, visual assets, audio, documentation, and related materials, is the proprietary property of NYXARA_IN.
+
+No part of this project may be reproduced, distributed, modified, publicly displayed, or used in any form without the prior written permission of NYXARA_IN.
+
+The repository is governed under the NYXARA_IN proprietary license and all rights are reserved to NYXARA_IN.
 
 ---
 
