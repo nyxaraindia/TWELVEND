@@ -81,6 +81,31 @@ TWELVEND is being developed in Godot Engine and is configured for a mobile-frien
 
 This repository currently contains the early game foundation and narrative materials for Version 1, including the project configuration and the underlying story structure. The project is positioned as a narrative-first horror experience with room-based exploration and mystery progression as central pillars.
 
+## Daily Development Progress
+
+The following log summarizes the work documented in the project's daily development reports:
+
+### Day 1 — Project Setup and Preparation (16 November 2026)
+
+- Created and verified the TWELVEND Godot project and its organized folder structure.
+- Prepared folders for scenes, scripts, assets, narrative, and documentation, including the twelve rooms and separate thirteenth room.
+- Recorded key project decisions and development setup.
+- [Read the Day 1 development report](./Version1/docs/development/day01.md)
+
+### Day 2 — Introduction to the Godot Editor (17 November 2026)
+
+- Opened the project in Godot and identified the Scene, Inspector, FileSystem, and 3D Viewport panels.
+- Practised navigating the editor and learned the purpose of its main controls.
+- Completed the knowledge test with a score of 4/4 (100%).
+- [Read the Day 2 development report](./Version1/docs/development/day02.md)
+
+### Day 3 — Nodes, Scenes, and the First House Scene (17 November 2026)
+
+- Learned about Nodes, Scenes, Scene Trees, and 3D positioning, rotation, and scale.
+- Created the first 3D house scene with a floor, back wall, and left wall.
+- Practised aligning the walls with the floor and completed the quiz with a score of 5/5 (100%).
+- [Read the Day 3 development report](./Version1/docs/development/day03.md)
+
 ## Why TWELVEND?
 
 TWELVEND aims to capture the feeling of being trapped in a place where every door leads somewhere slightly more wrong than before. It is a story about unfinished memory, impossible architecture, and the terrifying notion that the house itself may know more than the person trying to escape it.
