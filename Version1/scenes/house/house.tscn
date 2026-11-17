@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://j8weh2t1dpj8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_j6yac"]
+size = Vector3(10, 0.2, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gm6s2"]
+size = Vector3(10, 3, 0.2)
+
+[node name="House" type="Node3D" unique_id=1764023319]
+
+[node name="Floor" type="MeshInstance3D" parent="." unique_id=734214644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29688823, 0.3309034, -0.043799162)
+mesh = SubResource("BoxMesh_j6yac")
+
+[node name="Wall_Back" type="MeshInstance3D" parent="." unique_id=60671801]
+transform = Transform3D(0.9923783, -0.0013192451, 0.0008247569, 0.00091290346, 1.4326013, 0.0011055693, -0.00084279105, -0.0016277805, 0.9723197, -0.2471683, 2.3910694, -5.3784637)
+mesh = SubResource("BoxMesh_gm6s2")
