@@ -1,226 +1,203 @@
 # TWELVEND — Day 01
-
-## Project Foundation and Folder Structure
+## Project Setup and Preparation
 
 **Date:** 16 November 2026  
-**Status:** COMPLETED
+**Status:** COMPLETED  
+**Quiz Score:** N/A
 
 ---
 
-## 1. Objective
+## 1. Today's Objective
 
-Prepare the TWELVEND Godot project directory and organize all the
-required folders for future game development.
+Prepare the TWELVEND game development project.
 
-The purpose of Day 1 is to establish a clean and organized
-foundation before starting actual game development.
+By the end of Day 1:
+- Create the Godot project.
+- Understand the project location.
+- Create an organized folder structure.
+- Prepare folders for scenes, scripts, assets and documentation.
+- Verify the project files.
 
 ---
 
 ## 2. Project Information
 
-| Property | Details |
+| Item | Details |
 |---|---|
-| Game Name | TWELVEND |
+| Game Title | TWELVEND |
 | Subtitle | The Thirteenth Room |
-| Genre | Psychological Horror / Supernatural Mystery |
+| Genre | Psychological Horror / Mystery |
 | Game Engine | Godot 4 Standard |
 | Programming Language | GDScript |
 | Target Platform | Windows PC |
 | Development OS | Fedora Linux |
 | Renderer | Compatibility |
-| Project Type | 3D Game |
+| Game Type | 3D |
 
 ---
 
 ## 3. Project Location
 
-The main project directory is:
-
 ```text
 /run/media/amalkaji/AMAL/E/NYXARA/TWELVEND/Version1
 ```
 
-The main Godot project file is:
+The main Godot project file:
 
 ```text
-project.godot
+Version1/project.godot
 ```
 
-This file contains the project's main configuration and settings.
-
 ---
 
-## 4. Completed Tasks
+## 4. Tasks Completed
 
 - [x] Created the TWELVEND project directory.
-- [x] Created the Godot project using Godot Project Manager.
-- [x] Located the actual project.godot file.
-- [x] Verified the Godot project location.
-- [x] Created the assets directory.
-- [x] Created the scenes directory.
-- [x] Created the scripts directory.
-- [x] Created the narrative directory.
-- [x] Created the development documentation directory.
-- [x] Created folders for all twelve documented rooms.
-- [x] Created the thirteenth-room directory.
-- [x] Created the player and character directories.
-- [x] Created the backwater, kaavu and pond directories.
-- [x] Created progress.md.
+- [x] Created the Godot project.
+- [x] Located the project.godot file.
+- [x] Verified the project location.
+- [x] Created the main folder structure.
+- [x] Created the assets folder.
+- [x] Created the scenes folder.
+- [x] Created the scripts folder.
+- [x] Created the narrative folder.
+- [x] Created the docs folder.
+- [x] Prepared folders for the twelve documented rooms.
+- [x] Prepared a separate folder for the thirteenth room.
+- [x] Created the main progress tracking file.
 
 ---
 
-## 5. Final Project Structure
+## 5. Project Folder Structure
 
 ```text
-TWELVEND/
-└── Version1/
-    ├── project.godot
-    ├── progress.md
-    ├── icon.svg
-    │
-    ├── assets/
-    │   ├── animations/
-    │   ├── audio/
-    │   ├── models/
-    │   └── textures/
-    │
-    ├── docs/
-    │   └── development/
-    │       └── day01.md
-    │
-    ├── narrative/
-    │   ├── characters.md
-    │   ├── dialogue.md
-    │   ├── room_design.md
-    │   ├── story_bible.md
-    │   └── timeline.md
-    │
-    ├── scenes/
-    │   ├── main/
-    │   ├── player/
-    │   ├── backwater/
-    │   ├── kaavu/
-    │   ├── pond/
-    │   ├── characters/
-    │   ├── thirteenth_room/
-    │   └── house/
-    │       ├── room_01/
-    │       ├── room_02/
-    │       ├── room_03/
-    │       ├── room_04/
-    │       ├── room_05/
-    │       ├── room_06/
-    │       ├── room_07/
-    │       ├── room_08/
-    │       ├── room_09/
-    │       ├── room_10/
-    │       ├── room_11/
-    │       └── room_12/
-    │
-    └── scripts/
-        ├── dialogue/
-        ├── interaction/
-        ├── inventory/
-        ├── player/
-        ├── puzzles/
-        └── supernatural/
+Version1/
+│
+├── assets/
+│   ├── animations/
+│   ├── audio/
+│   ├── models/
+│   └── textures/
+│
+├── docs/
+│   └── development/
+│       └── day01.md
+│
+├── narrative/
+│   ├── story_bible.md
+│   ├── characters.md
+│   ├── dialogue.md
+│   ├── room_design.md
+│   └── timeline.md
+│
+├── scenes/
+│   ├── backwater/
+│   ├── characters/
+│   ├── house/
+│   │   ├── room_01/
+│   │   ├── room_02/
+│   │   ├── room_03/
+│   │   ├── room_04/
+│   │   ├── room_05/
+│   │   ├── room_06/
+│   │   ├── room_07/
+│   │   ├── room_08/
+│   │   ├── room_09/
+│   │   ├── room_10/
+│   │   ├── room_11/
+│   │   └── room_12/
+│   ├── kaavu/
+│   ├── main/
+│   ├── player/
+│   ├── pond/
+│   └── thirteenth_room/
+│
+├── scripts/
+│   ├── dialogue/
+│   ├── interaction/
+│   ├── inventory/
+│   ├── player/
+│   ├── puzzles/
+│   └── supernatural/
+│
+├── icon.svg
+├── project.godot
+└── progress.md
 ```
 
 ---
 
 ## 6. Verification
 
-The following command was used to locate the Godot project:
+Command used to locate the Godot project:
 
 ```bash
 find "/run/media/amalkaji/AMAL/E/NYXARA" \
 -name "project.godot" -type f
 ```
 
-Verified result:
+Verified project:
 
 ```text
 /run/media/amalkaji/AMAL/E/NYXARA/TWELVEND/Version1/project.godot
 ```
 
-The project structure was checked using:
+Folder verification:
 
 ```bash
 tree "/run/media/amalkaji/AMAL/E/NYXARA/TWELVEND/Version1"
 ```
 
-Verification result:
-
+Previously verified structure:
 - 37 directories
 - 9 files
-- Godot project file successfully located
 
 ---
 
-## 7. Development Organization
+## 7. Important Development Decisions
 
-The project is divided into five major areas.
-
-### Assets
-Stores models, textures, audio and animations.
-
-### Scenes
-Stores the game's playable environments, characters and objects.
-
-### Scripts
-Stores GDScript code for gameplay systems.
-
-### Narrative
-Stores the story, characters, dialogue, timeline and room designs.
-
-### Documentation
-Stores daily development reports and technical notes.
+1. Use Godot 4 Standard.
+2. Use the Compatibility renderer for integrated graphics.
+3. Target Windows PC initially.
+4. Develop in small, testable stages.
+5. Keep individual house rooms organized separately.
+6. Keep the supernatural thirteenth room separate.
+7. Maintain daily Markdown development reports.
+8. Maintain a central story bible.
 
 ---
 
-## 8. Important Development Decisions
+## 8. What I Learned
 
-1. Godot 4 Standard will be used.
-2. The Compatibility renderer will be used for integrated graphics.
-3. The initial target platform is Windows PC.
-4. The game will be developed in small, testable stages.
-5. The twelve documented rooms will be organized separately.
-6. The thirteenth room will have its own scene directory.
-7. Daily progress will be recorded in Markdown files.
-8. The story will follow the TWELVEND story bible.
+- A game project needs an organized folder structure.
+- Godot uses project.godot as its main project configuration file.
+- Scenes, scripts and assets have different responsibilities.
+- Documentation helps maintain project continuity.
+- A large game should be developed in manageable stages.
 
 ---
 
 ## 9. Day 1 Result
 
-The TWELVEND project directory and initial folder structure
-have been successfully created and verified.
+**Status: COMPLETED**
 
-The project is ready for the next stage of Godot learning
-and development.
+The TWELVEND project structure was created and verified.
 
-<badge-placeholder/>
+The project is ready for learning the Godot editor.
 
 ---
 
-## 10. Next Day Plan
+## 10. Next Day
 
-### Day 02 — Godot Editor Introduction
+### Day 02 — Introduction to Godot Editor
 
-Topics:
+Planned topics:
+- Understanding the Godot interface.
+- Scene panel.
+- Inspector panel.
+- FileSystem panel.
+- 3D Viewport.
+- Important editor buttons.
+- Basic editor navigation.
 
-- Open the TWELVEND project in Godot.
-- Understand the Godot editor interface.
-- Identify the Scene panel.
-- Identify the Inspector panel.
-- Understand the FileSystem panel.
-- Explore the 3D workspace.
-- Learn how to navigate the Godot editor.
-
-**Expected Result:** Understand the basic Godot editor interface
-and become comfortable navigating the workspace.
-
----
-
-# DAY 01 — COMPLETED
+**Day 2 Status:** In Progress
