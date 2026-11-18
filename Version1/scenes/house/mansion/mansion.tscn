@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://j8weh2t1dpj8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_pn0ti"]
+size = Vector3(40, 0.2, 36)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7hm4m"]
+albedo_color = Color(0.8685237, 0.37435845, 0.11056013, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rcvfl"]
+size = Vector3(0.2, 0.5, 12)
+
+[node name="Mansion" type="Node3D" unique_id=1740452211]
+
+[node name="Ground" type="MeshInstance3D" parent="." unique_id=849914709]
+mesh = SubResource("BoxMesh_pn0ti")
+
+[node name="CourtyardMarker_Left" type="MeshInstance3D" parent="." unique_id=244923145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.35, 0)
+material_override = SubResource("StandardMaterial3D_7hm4m")
+mesh = SubResource("BoxMesh_rcvfl")
+
+[node name="CourtyardMarker_Right" type="MeshInstance3D" parent="." unique_id=33197758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.35, 0)
+material_override = SubResource("StandardMaterial3D_7hm4m")
+mesh = SubResource("BoxMesh_rcvfl")
