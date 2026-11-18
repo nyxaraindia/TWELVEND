@@ -9,6 +9,9 @@ size = Vector3(10, 3, 0.2)
 [sub_resource type="BoxMesh" id="BoxMesh_ow2wf"]
 size = Vector3(0.2, 3, 10)
 
+[sub_resource type="BoxMesh" id="BoxMesh_fryr0"]
+size = Vector3(0.2, 3, 10)
+
 [node name="House" type="Node3D" unique_id=1764023319]
 
 [node name="Floor" type="MeshInstance3D" parent="." unique_id=734214644]
@@ -21,3 +24,7 @@ mesh = SubResource("BoxMesh_gm6s2")
 [node name="Wall_Left" type="MeshInstance3D" parent="." unique_id=1007105144]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9, 1.6, 0)
 mesh = SubResource("BoxMesh_ow2wf")
+
+[node name="RightWall" type="MeshInstance3D" parent="." unique_id=1140890985]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9, 1.6, 0)
+mesh = SubResource("BoxMesh_fryr0")
