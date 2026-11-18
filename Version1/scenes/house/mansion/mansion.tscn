@@ -9,6 +9,12 @@ albedo_color = Color(0.8685237, 0.37435845, 0.11056013, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_rcvfl"]
 size = Vector3(0.2, 0.5, 12)
 
+[sub_resource type="BoxMesh" id="BoxMesh_j7n4m"]
+size = Vector3(16, 0.5, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7hm4m"]
+size = Vector3(40, 0.2, 12)
+
 [node name="Mansion" type="Node3D" unique_id=1740452211]
 
 [node name="Ground" type="MeshInstance3D" parent="." unique_id=849914709]
@@ -19,7 +25,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.35, 0)
 material_override = SubResource("StandardMaterial3D_7hm4m")
 mesh = SubResource("BoxMesh_rcvfl")
 
+[node name="CourtyardMarker_Front" type="MeshInstance3D" parent="." unique_id=824833311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 6)
+material_override = SubResource("StandardMaterial3D_7hm4m")
+mesh = SubResource("BoxMesh_j7n4m")
+
+[node name="CourtyardMarker_Front2" type="MeshInstance3D" parent="." unique_id=633418492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, -6)
+material_override = SubResource("StandardMaterial3D_7hm4m")
+mesh = SubResource("BoxMesh_j7n4m")
+
 [node name="CourtyardMarker_Right" type="MeshInstance3D" parent="." unique_id=33197758]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.35, 0)
 material_override = SubResource("StandardMaterial3D_7hm4m")
 mesh = SubResource("BoxMesh_rcvfl")
+
+[node name="Floor_South" type="MeshInstance3D" parent="." unique_id=1178380114]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 12)
+mesh = SubResource("BoxMesh_7hm4m")
