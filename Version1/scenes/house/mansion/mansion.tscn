@@ -34,6 +34,12 @@ size = Vector3(12, 0.2, 12)
 [sub_resource type="BoxMesh" id="BoxMesh_7hm4m"]
 size = Vector3(40, 0.2, 12)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jp7wk"]
+albedo_color = Color(0.31764707, 0.29411766, 0.25882354, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_35to7"]
+size = Vector3(40, 0.01, 0.04)
+
 [node name="Mansion" type="Node3D" unique_id=1740452211]
 
 [node name="CourtyardMarker_Left" type="MeshInstance3D" parent="." unique_id=244923145]
@@ -74,3 +80,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, -12)
 mesh = SubResource("BoxMesh_7hm4m")
 
 [node name="StoneJoint_Test" type="MeshInstance3D" parent="." unique_id=1462598703]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.255, 12)
+material_override = SubResource("StandardMaterial3D_jp7wk")
+mesh = SubResource("BoxMesh_35to7")
