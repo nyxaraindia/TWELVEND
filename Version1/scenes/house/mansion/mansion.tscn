@@ -9,11 +9,27 @@ size = Vector3(0.2, 0.5, 12)
 [sub_resource type="BoxMesh" id="BoxMesh_j7n4m"]
 size = Vector3(16, 0.5, 0.2)
 
-[sub_resource type="BoxMesh" id="BoxMesh_7hm4m"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_jh7a4"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_j7n4m"]
+noise = SubResource("FastNoiseLite_jh7a4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j7n4m"]
+albedo_color = Color(0.6509804, 0.60784316, 0.5254902, 1)
+albedo_texture = SubResource("NoiseTexture2D_j7n4m")
+clearcoat_roughness = 0.72
+
+[sub_resource type="BoxMesh" id="BoxMesh_jh7a4"]
 size = Vector3(40, 0.2, 12)
 
 [sub_resource type="BoxMesh" id="BoxMesh_jp7wk"]
 size = Vector3(12, 0.2, 12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wx7vi"]
+size = Vector3(12, 0.2, 12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7hm4m"]
+size = Vector3(40, 0.2, 12)
 
 [node name="Mansion" type="Node3D" unique_id=1740452211]
 
@@ -39,7 +55,8 @@ mesh = SubResource("BoxMesh_rcvfl")
 
 [node name="Floor_South" type="MeshInstance3D" parent="." unique_id=1178380114]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 12)
-mesh = SubResource("BoxMesh_7hm4m")
+material_override = SubResource("StandardMaterial3D_j7n4m")
+mesh = SubResource("BoxMesh_jh7a4")
 
 [node name="Floor_West" type="MeshInstance3D" parent="." unique_id=1032938496]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.15, 0)
@@ -47,7 +64,7 @@ mesh = SubResource("BoxMesh_jp7wk")
 
 [node name="Floor_East" type="MeshInstance3D" parent="." unique_id=1168203455]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.15, 0)
-mesh = SubResource("BoxMesh_jp7wk")
+mesh = SubResource("BoxMesh_wx7vi")
 
 [node name="Floor_North" type="MeshInstance3D" parent="." unique_id=1951649293]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, -12)
