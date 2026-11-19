@@ -43,3 +43,11 @@ mesh = SubResource("BoxMesh_rcvfl")
 [node name="Floor_South" type="MeshInstance3D" parent="." unique_id=1178380114]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 12)
 mesh = SubResource("BoxMesh_7hm4m")
+
+[node name="Floor_West" type="MeshInstance3D" parent="." unique_id=1032938496]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 12)
+mesh = SubResource("BoxMesh_7hm4m")
+
+[node name="Floor_North" type="MeshInstance3D" parent="." unique_id=1951649293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, -12)
+mesh = SubResource("BoxMesh_7hm4m")
