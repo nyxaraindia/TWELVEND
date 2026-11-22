@@ -105,3 +105,9 @@ mesh = SubResource("BoxMesh_7hm4m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.255, 12)
 material_override = SubResource("StandardMaterial3D_jp7wk")
 mesh = SubResource("BoxMesh_35to7")
+
+[node name="Interior_Walls" type="Node3D" parent="." unique_id=27180928]
+
+[node name="Room_Partitions" type="Node3D" parent="Interior_Walls" unique_id=78838900]
+
+[node name="Courtyard_Walls" type="Node3D" parent="Interior_Walls" unique_id=690917340]
