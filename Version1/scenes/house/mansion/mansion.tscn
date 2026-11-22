@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://j8weh2t1dpj8"]
 
+[ext_resource type="Texture2D" uid="uid://cyqekkupl33nq" path="res://assets/textures/floor/black_slate/black-slate-floor_2k_color.jpg" id="1_wx7vi"]
+[ext_resource type="Texture2D" uid="uid://deaqow1pqyh13" path="res://assets/textures/floor/black_slate/black-slate-floor_2k_normalgl.jpg" id="2_4hri8"]
+[ext_resource type="Texture2D" uid="uid://cgp722jxqyst6" path="res://assets/textures/floor/black_slate/black-slate-floor_2k_roughness.jpg" id="3_xdwt3"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7hm4m"]
 albedo_color = Color(0.8685237, 0.37435845, 0.11056013, 1)
 
@@ -9,18 +13,12 @@ size = Vector3(0.2, 0.5, 12)
 [sub_resource type="BoxMesh" id="BoxMesh_j7n4m"]
 size = Vector3(16, 0.5, 0.2)
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_xdwt3"]
-noise_type = 2
-frequency = 0.025
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_4hri8"]
-noise = SubResource("FastNoiseLite_xdwt3")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j7n4m"]
-albedo_color = Color(0.6509804, 0.60784316, 0.5254902, 1)
-albedo_texture = SubResource("NoiseTexture2D_4hri8")
-clearcoat_roughness = 0.72
-uv1_scale = Vector3(3, 3, 3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_32jgd"]
+albedo_texture = ExtResource("1_wx7vi")
+roughness_texture = ExtResource("3_xdwt3")
+normal_enabled = true
+normal_texture = ExtResource("2_4hri8")
+uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_jh7a4"]
 size = Vector3(40, 0.2, 12)
@@ -64,7 +62,7 @@ mesh = SubResource("BoxMesh_rcvfl")
 
 [node name="Floor_South" type="MeshInstance3D" parent="." unique_id=1178380114]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 12)
-material_override = SubResource("StandardMaterial3D_j7n4m")
+material_override = SubResource("StandardMaterial3D_32jgd")
 mesh = SubResource("BoxMesh_jh7a4")
 
 [node name="Floor_West" type="MeshInstance3D" parent="." unique_id=1032938496]
