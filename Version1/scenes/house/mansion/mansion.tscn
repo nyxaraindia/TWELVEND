@@ -182,3 +182,5 @@ mesh = SubResource("BoxMesh_ow2wf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 18)
 material_override = SubResource("StandardMaterial3D_xdwt3")
 mesh = SubResource("BoxMesh_4hri8")
+
+[node name="Kitchen_Floor" type="MeshInstance3D" parent="." unique_id=846292389]
