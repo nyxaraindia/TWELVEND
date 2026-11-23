@@ -24,3 +24,15 @@
 
 ### Next
 Day 8 — Ground-Floor Construction Continues.
+
+## Day 12 — 23 November 2026
+- Revised the mansion's ground-floor architectural scale.
+- Planned a larger 60 × 52 unit mansion concept.
+- Increased the proposed Nadumuttam to 24 × 20 units.
+- Created individual room-floor nodes.
+- Created EntranceRoom_West_Floor and EntranceRoom_East_Floor.
+- Studied mathematical coordinate geometry and independently
+  arranged the floor layout.
+- Preserved the courtyard opening and existing scene hierarchy.
+- Saved the Godot scene.
+- Next: Day 13 ground-floor layout verification.
