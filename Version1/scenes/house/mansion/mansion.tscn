@@ -4,14 +4,23 @@
 [ext_resource type="Texture2D" uid="uid://deaqow1pqyh13" path="res://assets/textures/floor/black_slate/black-slate-floor_2k_normalgl.jpg" id="2_4hri8"]
 [ext_resource type="Texture2D" uid="uid://cgp722jxqyst6" path="res://assets/textures/floor/black_slate/black-slate-floor_2k_roughness.jpg" id="3_xdwt3"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7hm4m"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4hri8"]
 albedo_color = Color(0.8685237, 0.37435845, 0.11056013, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_rcvfl"]
-size = Vector3(0.2, 0.5, 12)
+size = Vector3(0.2, 0.5, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7hm4m"]
+albedo_color = Color(0.8685237, 0.37435845, 0.11056013, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_j7n4m"]
-size = Vector3(16, 0.5, 0.2)
+size = Vector3(24, 0.5, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xdwt3"]
+size = Vector3(24, 0.5, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lx5sv"]
+size = Vector3(0.2, 0.5, 20)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_32jgd"]
 albedo_texture = ExtResource("1_wx7vi")
@@ -41,7 +50,7 @@ normal_texture = ExtResource("2_4hri8")
 uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_wx7vi"]
-size = Vector3(12, 0.2, 12)
+size = Vector3(18, 0.2, 20)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lx5sv"]
 albedo_texture = ExtResource("1_wx7vi")
@@ -72,24 +81,24 @@ size = Vector3(16, 0.2, 12)
 [node name="Mansion" type="Node3D" unique_id=1740452211]
 
 [node name="CourtyardMarker_Left" type="MeshInstance3D" parent="." unique_id=244923145]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.35, 0)
-material_override = SubResource("StandardMaterial3D_7hm4m")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.35, 0)
+material_override = SubResource("StandardMaterial3D_4hri8")
 mesh = SubResource("BoxMesh_rcvfl")
 
 [node name="CourtyardMarker_Front" type="MeshInstance3D" parent="." unique_id=824833311]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 10)
 material_override = SubResource("StandardMaterial3D_7hm4m")
 mesh = SubResource("BoxMesh_j7n4m")
 
 [node name="CourtyardMarker_Front2" type="MeshInstance3D" parent="." unique_id=633418492]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, -6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, -10)
 material_override = SubResource("StandardMaterial3D_7hm4m")
-mesh = SubResource("BoxMesh_j7n4m")
+mesh = SubResource("BoxMesh_xdwt3")
 
 [node name="CourtyardMarker_Right" type="MeshInstance3D" parent="." unique_id=33197758]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.35, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.35, 0)
 material_override = SubResource("StandardMaterial3D_7hm4m")
-mesh = SubResource("BoxMesh_rcvfl")
+mesh = SubResource("BoxMesh_lx5sv")
 
 [node name="Family_Hall_Floor" type="MeshInstance3D" parent="." unique_id=1178380114]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 12)
@@ -101,8 +110,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.15, 0)
 material_override = SubResource("StandardMaterial3D_kqb7s")
 mesh = SubResource("BoxMesh_jp7wk")
 
-[node name="Floor_East" type="MeshInstance3D" parent="." unique_id=1168203455]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.15, 0)
+[node name="Kichen_Floor" type="MeshInstance3D" parent="." unique_id=1168203455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0.15, 0)
 material_override = SubResource("StandardMaterial3D_0foop")
 mesh = SubResource("BoxMesh_wx7vi")
 
