@@ -30,7 +30,7 @@ normal_texture = ExtResource("2_4hri8")
 uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_jh7a4"]
-size = Vector3(16, 0.2, 12)
+size = Vector3(24, 0.2, 16)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kqb7s"]
 albedo_texture = ExtResource("1_wx7vi")
@@ -101,7 +101,7 @@ material_override = SubResource("StandardMaterial3D_7hm4m")
 mesh = SubResource("BoxMesh_lx5sv")
 
 [node name="Family_Hall_Floor" type="MeshInstance3D" parent="." unique_id=1178380114]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 18)
 material_override = SubResource("StandardMaterial3D_32jgd")
 mesh = SubResource("BoxMesh_jh7a4")
 
