@@ -98,6 +98,16 @@ uv1_scale = Vector3(10, 1, 10)
 [sub_resource type="BoxMesh" id="BoxMesh_ow2wf"]
 size = Vector3(18, 0.2, 16)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xdwt3"]
+albedo_texture = ExtResource("1_wx7vi")
+roughness_texture = ExtResource("3_xdwt3")
+normal_enabled = true
+normal_texture = ExtResource("2_4hri8")
+uv1_scale = Vector3(10, 1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4hri8"]
+size = Vector3(18, 0.2, 16)
+
 [node name="Mansion" type="Node3D" unique_id=1740452211]
 
 [node name="CourtyardMarker_Left" type="MeshInstance3D" parent="." unique_id=244923145]
@@ -169,3 +179,6 @@ material_override = SubResource("StandardMaterial3D_fryr0")
 mesh = SubResource("BoxMesh_ow2wf")
 
 [node name="DiningRoom_Floor" type="MeshInstance3D" parent="." unique_id=64910288]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 18)
+material_override = SubResource("StandardMaterial3D_xdwt3")
+mesh = SubResource("BoxMesh_4hri8")
