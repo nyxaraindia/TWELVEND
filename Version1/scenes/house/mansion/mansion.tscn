@@ -40,7 +40,7 @@ normal_texture = ExtResource("2_4hri8")
 uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_jp7wk"]
-size = Vector3(12, 0.2, 12)
+size = Vector3(18, 0.2, 20)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0foop"]
 albedo_texture = ExtResource("1_wx7vi")
@@ -60,7 +60,7 @@ normal_texture = ExtResource("2_4hri8")
 uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_7hm4m"]
-size = Vector3(16, 0.2, 12)
+size = Vector3(24, 0.2, 16)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jp7wk"]
 albedo_color = Color(0.31764707, 0.29411766, 0.25882354, 1)
@@ -105,8 +105,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 12)
 material_override = SubResource("StandardMaterial3D_32jgd")
 mesh = SubResource("BoxMesh_jh7a4")
 
-[node name="Floor_West" type="MeshInstance3D" parent="." unique_id=1032938496]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.15, 0)
+[node name="PrayerRoom_Floor" type="MeshInstance3D" parent="." unique_id=1032938496]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0.15, 0)
 material_override = SubResource("StandardMaterial3D_kqb7s")
 mesh = SubResource("BoxMesh_jp7wk")
 
@@ -115,8 +115,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0.15, 0)
 material_override = SubResource("StandardMaterial3D_0foop")
 mesh = SubResource("BoxMesh_wx7vi")
 
-[node name="Floor_North" type="MeshInstance3D" parent="." unique_id=1951649293]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, -12)
+[node name="Galary_Floor" type="MeshInstance3D" parent="." unique_id=1951649293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, -18)
 material_override = SubResource("StandardMaterial3D_lx5sv")
 mesh = SubResource("BoxMesh_7hm4m")
 
