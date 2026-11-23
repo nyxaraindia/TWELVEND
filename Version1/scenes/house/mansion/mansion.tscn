@@ -76,7 +76,7 @@ normal_texture = ExtResource("2_4hri8")
 uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_j6yac"]
-size = Vector3(16, 0.2, 12)
+size = Vector3(24, 0.2, 16)
 
 [node name="Mansion" type="Node3D" unique_id=1740452211]
 
@@ -134,6 +134,6 @@ mesh = SubResource("BoxMesh_35to7")
 [node name="Courtyard_Walls" type="Node3D" parent="Interior_Walls" unique_id=690917340]
 
 [node name="Entrance_Room_Floor" type="MeshInstance3D" parent="." unique_id=681888931]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 24)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 34)
 material_override = SubResource("StandardMaterial3D_wx7vi")
 mesh = SubResource("BoxMesh_j6yac")
