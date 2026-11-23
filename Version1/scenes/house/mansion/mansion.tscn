@@ -110,4 +110,6 @@ mesh = SubResource("BoxMesh_35to7")
 
 [node name="Room_Partitions" type="Node3D" parent="Interior_Walls" unique_id=78838900]
 
+[node name="Entrance_Room_Walls" type="Node3D" parent="Interior_Walls/Room_Partitions" unique_id=1505505622]
+
 [node name="Courtyard_Walls" type="Node3D" parent="Interior_Walls" unique_id=690917340]
