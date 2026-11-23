@@ -78,6 +78,26 @@ uv1_scale = Vector3(10, 1, 10)
 [sub_resource type="BoxMesh" id="BoxMesh_j6yac"]
 size = Vector3(24, 0.2, 16)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ow2wf"]
+albedo_texture = ExtResource("1_wx7vi")
+roughness_texture = ExtResource("3_xdwt3")
+normal_enabled = true
+normal_texture = ExtResource("2_4hri8")
+uv1_scale = Vector3(10, 1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gm6s2"]
+size = Vector3(18, 0.2, 16)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fryr0"]
+albedo_texture = ExtResource("1_wx7vi")
+roughness_texture = ExtResource("3_xdwt3")
+normal_enabled = true
+normal_texture = ExtResource("2_4hri8")
+uv1_scale = Vector3(10, 1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ow2wf"]
+size = Vector3(18, 0.2, 16)
+
 [node name="Mansion" type="Node3D" unique_id=1740452211]
 
 [node name="CourtyardMarker_Left" type="MeshInstance3D" parent="." unique_id=244923145]
@@ -137,3 +157,15 @@ mesh = SubResource("BoxMesh_35to7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 34)
 material_override = SubResource("StandardMaterial3D_wx7vi")
 mesh = SubResource("BoxMesh_j6yac")
+
+[node name="StudyRoom_Floor" type="MeshInstance3D" parent="." unique_id=1433729873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0.15, -18)
+material_override = SubResource("StandardMaterial3D_ow2wf")
+mesh = SubResource("BoxMesh_gm6s2")
+
+[node name="Library_Floor" type="MeshInstance3D" parent="." unique_id=1496263732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, -18)
+material_override = SubResource("StandardMaterial3D_fryr0")
+mesh = SubResource("BoxMesh_ow2wf")
+
+[node name="DiningRoom_Floor" type="MeshInstance3D" parent="." unique_id=64910288]
