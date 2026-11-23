@@ -110,7 +110,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.15, 0)
 material_override = SubResource("StandardMaterial3D_kqb7s")
 mesh = SubResource("BoxMesh_jp7wk")
 
-[node name="Kichen_Floor" type="MeshInstance3D" parent="." unique_id=1168203455]
+[node name="StoreRoom_Floor" type="MeshInstance3D" parent="." unique_id=1168203455]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0.15, 0)
 material_override = SubResource("StandardMaterial3D_0foop")
 mesh = SubResource("BoxMesh_wx7vi")
