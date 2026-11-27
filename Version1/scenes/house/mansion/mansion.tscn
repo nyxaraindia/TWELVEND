@@ -40,7 +40,7 @@ normal_texture = ExtResource("2_4hri8")
 uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_jp7wk"]
-size = Vector3(18, 0.2, 20)
+size = Vector3(18, 0.2, 26)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0foop"]
 albedo_texture = ExtResource("1_wx7vi")
@@ -50,7 +50,7 @@ normal_texture = ExtResource("2_4hri8")
 uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_wx7vi"]
-size = Vector3(18, 0.2, 20)
+size = Vector3(18, 0.2, 26)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lx5sv"]
 albedo_texture = ExtResource("1_wx7vi")
@@ -60,7 +60,7 @@ normal_texture = ExtResource("2_4hri8")
 uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_7hm4m"]
-size = Vector3(24, 0.2, 16)
+size = Vector3(34, 0.2, 16)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jp7wk"]
 albedo_color = Color(0.31764707, 0.29411766, 0.25882354, 1)
@@ -116,7 +116,7 @@ normal_texture = ExtResource("2_4hri8")
 uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_0foop"]
-size = Vector3(18, 0.2, 16)
+size = Vector3(18, 0.2, 24)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v1upo"]
 albedo_texture = ExtResource("1_wx7vi")
@@ -137,6 +137,15 @@ uv1_scale = Vector3(10, 1, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ualky"]
 size = Vector3(40, 0.2, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_d8q5b"]
+size = Vector3(40, 0.2, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kqb7s"]
+size = Vector3(8, 0.2, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tfu5j"]
+size = Vector3(8, 0.2, 20)
 
 [node name="Mansion" type="Node3D" unique_id=1740452211]
 
@@ -166,17 +175,17 @@ material_override = SubResource("StandardMaterial3D_32jgd")
 mesh = SubResource("BoxMesh_jh7a4")
 
 [node name="PrayerRoom_Floor" type="MeshInstance3D" parent="." unique_id=1032938496]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0.15, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0.15, -5)
 material_override = SubResource("StandardMaterial3D_kqb7s")
 mesh = SubResource("BoxMesh_jp7wk")
 
 [node name="StoreRoom_Floor" type="MeshInstance3D" parent="." unique_id=1168203455]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0.15, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0.15, -5)
 material_override = SubResource("StandardMaterial3D_0foop")
 mesh = SubResource("BoxMesh_wx7vi")
 
 [node name="Galary_Floor" type="MeshInstance3D" parent="." unique_id=1951649293]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.031, 0.15, -26)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, -26)
 material_override = SubResource("StandardMaterial3D_lx5sv")
 mesh = SubResource("BoxMesh_7hm4m")
 
@@ -199,22 +208,22 @@ material_override = SubResource("StandardMaterial3D_wx7vi")
 mesh = SubResource("BoxMesh_j6yac")
 
 [node name="Kitchen_Floor" type="MeshInstance3D" parent="." unique_id=1433729873]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0.15, -26)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.15, -26)
 material_override = SubResource("StandardMaterial3D_ow2wf")
 mesh = SubResource("BoxMesh_gm6s2")
 
 [node name="Library_Floor" type="MeshInstance3D" parent="." unique_id=1496263732]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0.15, -26)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.15, -26)
 material_override = SubResource("StandardMaterial3D_fryr0")
 mesh = SubResource("BoxMesh_ow2wf")
 
 [node name="DiningRoom_Floor" type="MeshInstance3D" parent="." unique_id=64910288]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0.15, 26)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0.15, 26)
 material_override = SubResource("StandardMaterial3D_xdwt3")
 mesh = SubResource("BoxMesh_4hri8")
 
 [node name="StudyRoom_Floor" type="MeshInstance3D" parent="." unique_id=846292389]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0.15, 26)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0.15, 20)
 material_override = SubResource("StandardMaterial3D_tfu5j")
 mesh = SubResource("BoxMesh_0foop")
 
@@ -231,3 +240,15 @@ mesh = SubResource("BoxMesh_fryr0")
 [node name="Walkway_North" type="MeshInstance3D" parent="." unique_id=1083312222]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, -14)
 mesh = SubResource("BoxMesh_ualky")
+
+[node name="Walkway_South" type="MeshInstance3D" parent="." unique_id=1429729755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 14)
+mesh = SubResource("BoxMesh_d8q5b")
+
+[node name="Walkway_East" type="MeshInstance3D" parent="." unique_id=427532678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0.15, 0)
+mesh = SubResource("BoxMesh_kqb7s")
+
+[node name="Walkway_West" type="MeshInstance3D" parent="." unique_id=154666924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.15, 0)
+mesh = SubResource("BoxMesh_tfu5j")
