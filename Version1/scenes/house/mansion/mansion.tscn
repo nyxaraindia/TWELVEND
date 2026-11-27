@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://cyqekkupl33nq" path="res://assets/textures/floor/black_slate/black-slate-floor_2k_color.jpg" id="1_wx7vi"]
 [ext_resource type="Texture2D" uid="uid://deaqow1pqyh13" path="res://assets/textures/floor/black_slate/black-slate-floor_2k_normalgl.jpg" id="2_4hri8"]
 [ext_resource type="Texture2D" uid="uid://cgp722jxqyst6" path="res://assets/textures/floor/black_slate/black-slate-floor_2k_roughness.jpg" id="3_xdwt3"]
+[ext_resource type="Texture2D" uid="uid://buby2rjo6r5qt" path="res://assets/textures/floor/Marble001-white/Marble001_2K-JPG_Color.jpg" id="4_lx5sv"]
+[ext_resource type="Texture2D" uid="uid://djchw5mmkipfv" path="res://assets/textures/floor/Marble001-white/Marble001_2K-JPG_NormalDX.jpg" id="5_0foop"]
+[ext_resource type="Texture2D" uid="uid://d14bem87c7o73" path="res://assets/textures/floor/Marble001-white/Marble001_2K-JPG_Roughness.jpg" id="6_kqb7s"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4hri8"]
 albedo_color = Color(0.8685237, 0.37435845, 0.11056013, 1)
@@ -138,6 +141,13 @@ uv1_scale = Vector3(10, 1, 10)
 [sub_resource type="BoxMesh" id="BoxMesh_ualky"]
 size = Vector3(40, 0.2, 8)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5o0hq"]
+albedo_texture = ExtResource("4_lx5sv")
+roughness_texture = ExtResource("6_kqb7s")
+normal_enabled = true
+normal_texture = ExtResource("5_0foop")
+uv1_scale = Vector3(10, 1, 10)
+
 [sub_resource type="BoxMesh" id="BoxMesh_d8q5b"]
 size = Vector3(40, 0.2, 8)
 
@@ -243,6 +253,7 @@ mesh = SubResource("BoxMesh_ualky")
 
 [node name="Walkway_South" type="MeshInstance3D" parent="." unique_id=1429729755]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 14)
+material_override = SubResource("StandardMaterial3D_5o0hq")
 mesh = SubResource("BoxMesh_d8q5b")
 
 [node name="Walkway_East" type="MeshInstance3D" parent="." unique_id=427532678]
